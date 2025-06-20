@@ -1,0 +1,152 @@
+/* -------------------------------
+   Medium Screens (<=1024px)
+-------------------------------- */
+@media (max-width: 1024px) {
+  .header-inner,
+  .hero-content,
+  .recipes-grid,
+  .categories-grid,
+  .footer-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-list li {
+    margin: 10px 0;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons a {
+    margin: 10px 0;
+  }
+
+  .recipes-grid,
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* -------------------------------
+   Small Screens (<=768px)
+-------------------------------- */
+@media (max-width: 768px) {
+  /* Grid Adjustments */
+  .recipes-grid,
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Testimonials */
+  .testimonial-slider {
+    flex-direction: column;
+  }
+
+  /* Newsletter Form */
+  .newsletter-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter-form input[type="email"] {
+    width: 100%;
+  }
+
+  /* Add Recipe Form */
+  .add-recipe-form form {
+    padding: 20px;
+  }
+
+  .add-recipe-form h2 {
+    font-size: 1.6rem;
+  }
+
+  /* Mobile Menu Button */
+  .mobile-menu-btn {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+  }
+
+  /* Hide Main Nav by Default */
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  /* Show Main Nav When Active */
+  .main-nav.active {
+    display: flex;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-list li {
+    width: 100%;
+  }
+
+  .search-box {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .search-box input {
+    width: 80%;
+  }
+
+  .search-box button {
+    width: 20%;
+  }
+
+  /* Hero Section */
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    align-items: center;
+  }
+
+  /* Footer layout stacking */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+/* -------------------------------
+   Larger Screens (>=769px)
+-------------------------------- */
+@media (min-width: 769px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex !important;
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terms of Use - RecipeBook</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <!-- include your site header or nav here if needed -->
+     <div class="container">
+     <div class="header-inner">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.png" alt="RecipeBook Logo" />
+        </a>
+
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="category.html?category=Breakfast">Breakfast</a></li>
+                <li><a href="category.html?category=Lunch">Lunch</a></li>
+                <li><a href="category.html?category=Dinner">Dinner</a></li>
+                <li><a href="category.html?category=Desserts">Desserts</a></li>
+                <li><a href="category.html?category=Snacks">Snacks</a></li>
+              </ul>
+            </li>
+            <li><a href="add-receipe.html">Add Recipe</a></li>
+            <li class="search-box">
+              <input type="text" id="searchInput" placeholder="Search recipes..." />
+              <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Terms of Use</h1>
+    <p>By accessing and using RecipeBook, you agree to the following terms:</p>
+    <ul>
+      <li>This app is for personal and non-commercial use only.</li>
+      <li>You are responsible for the content you input (recipes, images, etc.).</li>
+      <li>We do not guarantee the preservation of your data if browser storage is cleared.</li>
+      <li>No liability is taken for content loss or misuse of the application.</li>
+    </ul>
+    <p>We may update these terms periodically. Continued use indicates your acceptance of any changes.</p>
+  </main>
+
+  <footer class="main-footer">
+    <p>&copy; 2025 RecipeBook. All rights reserved.</p>
+  </footer>
+</body>
+</html>

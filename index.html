@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RecipeBook - Discover & Share Recipes</title>
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.png" alt="RecipeBook Logo" />
+        </a>
+
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="category.html?category=Breakfast">Breakfast</a></li>
+                <li><a href="category.html?category=Lunch">Lunch</a></li>
+                <li><a href="category.html?category=Dinner">Dinner</a></li>
+                <li><a href="category.html?category=Desserts">Desserts</a></li>
+                <li><a href="category.html?category=Snacks">Snacks</a></li>
+              </ul>
+            </li>
+            <li><a href="add-receipe.html">Add Recipe</a></li>
+            <li class="search-box">
+              <input type="text" id="searchInput" placeholder="Search recipes..." />
+              <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Discover & Share Delicious Recipes</h1>
+        <p>Find your next favorite meal or share your culinary creations with the world</p>
+        <div class="hero-buttons">
+          <a href="category.html?category=Breakfast" class="btn btn-primary">Browse Recipes</a>
+          <a href="add-receipe.html" class="btn btn-outline">Share Your Recipe</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Recipes -->
+  <section class="featured-recipes">
+    <div class="container">
+      <h2 class="section-title">Featured Recipes</h2>
+      <div class="recipes-grid" id="featuredRecipes">
+        <!-- Dynamic recipes inserted here by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories">
+    <div class="container">
+      <h2 class="section-title">Popular Categories</h2>
+      <div class="categories-grid">
+        <a href="category.html?category=Breakfast" class="category-card">
+          <div class="category-icon"><i class="fas fa-egg"></i></div>
+          <h3>Breakfast</h3>
+        </a>
+        <a href="category.html?category=Lunch" class="category-card">
+          <div class="category-icon"><i class="fas fa-hamburger"></i></div>
+          <h3>Lunch</h3>
+        </a>
+        <a href="category.html?category=Dinner" class="category-card">
+          <div class="category-icon"><i class="fas fa-utensils"></i></div>
+          <h3>Dinner</h3>
+        </a>
+        <a href="category.html?category=Desserts" class="category-card">
+          <div class="category-icon"><i class="fas fa-ice-cream"></i></div>
+          <h3>Desserts</h3>
+        </a>
+        <a href="category.html?category=Snacks" class="category-card">
+          <div class="category-icon"><i class="fas fa-bread-slice"></i></div>
+          <h3>Snacks</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">What Our Users Say</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <p>"This recipe book has changed how I cook! So many amazing recipes in one place."</p>
+            <div class="testimonial-author">
+              <img src="assets/images/user1.jpg" alt="Sarah J." />
+              <h4>Sarah J.</h4>
+              <span>Home Cook</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <p>"As a professional chef, I appreciate the quality and variety of recipes available here."</p>
+            <div class="testimonial-author">
+              <img src="assets/images/user2.jpg" alt="Michael T." />
+              <h4>Michael T.</h4>
+              <span>Professional Chef</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get weekly recipe inspiration delivered to your inbox</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <img src="assets/images/logo-white.png" alt="RecipeBook Logo" class="footer-logo" />
+          <p>RecipeBook is a community for food lovers to discover and share their favorite recipes from around the world.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category.html">Recipes</a></li>
+            <li><a href="add-receipe.html">Add Recipe</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-categories">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="category.html?category=Breakfast">Breakfast</a></li>
+            <li><a href="category.html?category=Lunch">Lunch</a></li>
+            <li><a href="category.html?category=Dinner">Dinner</a></li>
+            <li><a href="category.html?category=Desserts">Desserts</a></li>
+            <li><a href="category.html?category=Snacks">Snacks</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-envelope"></i> info@recipebook.com</p>
+          <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Food Street, Culinary City</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 RecipeBook. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/category.js"></script>
+</body>
+</html>

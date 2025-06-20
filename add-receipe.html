@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Recipe - RecipeBook</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
+</head>
+<body>
+  <!-- Header (can be reused) -->
+  <header class="main-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <img src="./assets/images/logo.png" alt="RecipeBook Logo">
+        </a>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="recipes.html?category=Breakfast">Breakfast</a></li>
+                <li><a href="recipes.html?category=Lunch">Lunch</a></li>
+                <li><a href="recipes.html?category=Dinner">Dinner</a></li>
+                <li><a href="recipes.html?category=Desserts">Desserts</a></li>
+                <li><a href="recipes.html?category=Snacks">Snacks</a></li>
+              </ul>
+            </li>
+            <li class="active"><a href="add-recipe.html">Add Recipe</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Add Recipe Form -->
+  <section class="add-recipe-form">
+    <div class="container">
+      <h2>Add a New Recipe</h2>
+      <form id="recipeForm">
+        <div class="form-group">
+          <label for="recipeName">Recipe Name:</label>
+          <input type="text" id="recipeName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="category">Category:</label>
+          <select id="category" required>
+            <option value="">Select Category</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Desserts">Desserts</option>
+            <option value="Snacks">Snacks</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="ingredients">Ingredients:</label>
+          <textarea id="ingredients" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="steps">Preparation Steps:</label>
+          <textarea id="steps" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="image">Recipe Image:</label>
+          <input type="file" id="image" accept="image/*" required />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add Recipe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer (can be reused) -->
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2025 RecipeBook. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/add-receip.js"></script>
+</body>
+</html>

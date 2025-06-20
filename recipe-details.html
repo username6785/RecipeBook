@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<body>
+  <!-- Paste the full header here -->
+  <header class="main-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.png" alt="RecipeBook Logo" />
+        </a>
+
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="category.html?category=Breakfast">Breakfast</a></li>
+                <li><a href="category.html?category=Lunch">Lunch</a></li>
+                <li><a href="category.html?category=Dinner">Dinner</a></li>
+                <li><a href="category.html?category=Desserts">Desserts</a></li>
+                <li><a href="category.html?category=Snacks">Snacks</a></li>
+              </ul>
+            </li>
+            <li><a href="add-receipe.html">Add Recipe</a></li>
+            <li class="search-box">
+              <input type="text" id="searchInput" placeholder="Search recipes..." />
+              <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container" id="recipe-details">
+    <!-- Recipe details will appear here -->
+  </main>
+
+  <script src="js/recipe-details.js"></script>
+
+</body>
+</html>
